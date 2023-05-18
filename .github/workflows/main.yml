@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 19
+          node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@sample-learning'
+          scope: "@sample-learning"
       - run: npm install
       - run: npm publish
         env:
