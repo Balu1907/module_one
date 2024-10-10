@@ -26,6 +26,10 @@ jobs:
         run: |
           npm run build  # Change this to your build command
 
+      - name: Export project
+        run: |
+          npm run export  # Change this to your export command
+
       - name: Sync build to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
