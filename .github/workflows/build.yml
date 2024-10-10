@@ -35,7 +35,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          SOURCE_DIR: ./out # Change to your build directory if different
+          SOURCE_DIR: out # Change to your build directory if different
 
       - name: Notify success
         run: echo "Deployment to S3 successful!"
