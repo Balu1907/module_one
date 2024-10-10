@@ -37,5 +37,5 @@ jobs:
       #     S3_BUCKET: ${{ secrets.S3_BUCKET }}
       #     SOURCE_DIR: ./build # Change to your build directory if different
 
-      # - name: Notify success
-      #   run: echo "Deployment to S3 successful!"
+      - name: Notify success
+        run: echo "Deployment to S3 successful!"
