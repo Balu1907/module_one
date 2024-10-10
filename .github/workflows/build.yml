@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm ci  # Change this to your build command if not using npm
+          npm i -f  # Change this to your build command if not using npm
 
       - name: Build project
         run: |
