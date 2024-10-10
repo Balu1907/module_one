@@ -8,7 +8,7 @@ name: Build and Deploy to S3
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment: production
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
