@@ -34,7 +34,7 @@ jobs:
 
       - name: Build project
         run: |
-          export SHOPID=${{inputs.domain_name }} && npm run build  # Change this to your build command
+          export SHOPID=${{inputs.domain_name}} && npm run build  # Change this to your build command
 
       - name: Export project
         run: |
