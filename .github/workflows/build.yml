@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: "16" # Specify your Node.js version
 
+      - name: Print Inputs
+        run: |
+          echo "Name: ${{ github.event.inputs.name }}"
+          echo "Home: ${{ github.event.inputs.home }}"
+
       # - name: Install dependencies
       #   run: |
       #     npm i -f  # Change this to your build command if not using npm
