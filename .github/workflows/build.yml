@@ -1,7 +1,12 @@
 name: Build and Deploy to S3
 
 on:
-  workflow_dispatch
+  workflow_call:
+    inputs:
+      domain_name:
+        required: true
+        type: string
+
   # push:
   #   branches:
   #     - main # Change this to the branch you want to trigger on
@@ -21,8 +26,7 @@ jobs:
 
       - name: Print Inputs
         run: |
-          echo "Name: ${{ github.event.inputs.name }}"
-          echo "Home: ${{ github.event.inputs.home }}"
+          echo "Name: ${{inputs.domain_name }}"
 
       # - name: Install dependencies
       #   run: |
