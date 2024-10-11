@@ -67,6 +67,8 @@ export default function Home(props) {
   // Scroll to top on mount as to ensure the user sees the "Preview Mode" bar
   useScrollReset();
 
+  console.log("SHOPID",process.env.SHOPID)
+
   const [currentSnapshotId, setSnapshotId] = useState(null);
   const clearSnapshot = useCallback(() => setSnapshotId(null), [setSnapshotId]);
 
